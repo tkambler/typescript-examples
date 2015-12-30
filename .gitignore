@@ -1,0 +1,7 @@
+.baseDir.ts
+/compiled
+node_modules
+.DS_Store
+/.tscache
+/demo
+npm-debug.log
