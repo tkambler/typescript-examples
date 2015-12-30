@@ -10,9 +10,21 @@ module.exports = (grunt) => {
 
     grunt.config.init({
         'ts': {
-            'default': {
-                'src': ['demo_src/**/*.ts'],
-//                 'outDir': 'compiled'
+            'arrays': {
+                'src': ['demo_src/content/examples/arrays/**/*.ts']
+            },
+            'classes': {
+                'src': ['demo_src/content/examples/classes/**/*.ts']
+            },
+            'interfaces': {
+                'src': ['demo_src/content/examples/interfaces/**/*.ts']
+            },
+            'modules': {
+                'src': ['demo_src/content/examples/modules/**/*.ts'],
+                'out': 'demo_src/content/examples/modules/compiled.js'
+            },
+            'simple': {
+                'src': ['demo_src/content/examples/simple/**/*.ts']
             }
         },
         'watch': {
